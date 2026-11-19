@@ -1,0 +1,35 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Mac system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Datasets (download separately)
+data/
+dataset-resized/
+
+# Model files - keep only the best fine-tuned model
+models/*
+!models/best_fine_tuned_model.keras
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
