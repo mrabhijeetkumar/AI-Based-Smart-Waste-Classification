@@ -1,0 +1,24 @@
+Backbone: efficientnet
+Test accuracy: 92.97%
+
+              precision    recall  f1-score   support
+
+   cardboard      0.951     0.951     0.951        61
+       glass      0.973     0.961     0.967        76
+       metal      0.923     0.968     0.945        62
+       paper      0.921     0.911     0.916        90
+     plastic      0.944     0.918     0.931        73
+       trash      0.739     0.773     0.756        22
+
+    accuracy                          0.930       384
+   macro avg      0.909     0.913     0.911       384
+weighted avg      0.930     0.930     0.930       384
+
+
+Confusion matrix:
+[[58  0  0  3  0  0]
+ [ 0 73  0  0  2  1]
+ [ 0  1 60  0  1  0]
+ [ 3  0  1 82  0  4]
+ [ 0  0  2  3 67  1]
+ [ 0  1  2  1  1 17]]

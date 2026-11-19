@@ -31,10 +31,10 @@ st.set_page_config(
 # ==========================================
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent
-MODEL_PATH = PROJECT_DIR / "models" / "best_fine_tuned_model.keras"
+MODEL_PATH = PROJECT_DIR / "models" / "best_model_v3_efficientnet.keras"
 
-DEFAULT_IMG_SIZE = (160, 160)
-TEST_ACCURACY = 84.90
+DEFAULT_IMG_SIZE = (224, 224)
+TEST_ACCURACY = 92.97
 LOW_CONFIDENCE_THRESHOLD = 60.0  # below this, show a "retake photo" hint
 MAX_FILE_MB = 10  # keep equal to maxUploadSize in .streamlit/config.toml
 
@@ -621,7 +621,7 @@ info_items = [
     ("Test accuracy", f"{TEST_ACCURACY:.2f}%"),
     ("Waste categories", str(len(CLASS_NAMES))),
     ("Input size", f"{DEFAULT_IMG_SIZE[0]} × {DEFAULT_IMG_SIZE[1]}"),
-    ("Architecture", "MobileNetV2"),
+    ("Architecture", "EfficientNetV2B0"),
 ]
 for col, (label, value) in zip(info_cols, info_items):
     with col:

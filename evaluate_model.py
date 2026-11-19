@@ -14,9 +14,9 @@ from sklearn.metrics import (
 # =====================================
 
 DATA_DIR = Path("data")
-MODEL_PATH = Path("models/best_model.keras")
+MODEL_PATH = Path("models/best_model_v3_efficientnet.keras")
 
-IMG_SIZE = (160, 160)
+IMG_SIZE = (224, 224)
 BATCH_SIZE = 16
 
 CLASS_NAMES = [
